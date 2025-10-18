@@ -3,7 +3,7 @@
 
 ## Aim
 To write a program for **mean**, **variance**, and **cross-correlation** in Scilab and verify the output.
-
+ 
 ---
 
 ## Equipment Needed
