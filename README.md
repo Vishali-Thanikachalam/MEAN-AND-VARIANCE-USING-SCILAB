@@ -1,1 +1,109 @@
 # MEAN-AND-VARIANCE-USING-SCILAB
+# Experiment No. 5: Simulation of Mean and Variance Using Scilab
+
+## Aim
+To write a program for **mean**, **variance**, and **cross-correlation** in Scilab and verify the output.
+
+---
+
+## Equipment Needed
+- Computer with i3 Processor  
+- Scilab Software
+
+---
+
+## Algorithm
+1. **Define the Function:** Specify the function you want to simulate. For example, `f(x) = sin(x)` or any other function.  
+2. **Generate Sample Points:** Decide on the range and the number of sample points. Generate these sample points within the desired range.  
+3. **Evaluate the Function:** Compute the function values at each of these sample points.  
+4. **Compute Mean, Variance, and Cross-Correlation:** Use Scilab's functions to calculate the mean and variance of the computed function values.  
+5. **Display Results:** Output the computed mean, variance, and cross-correlation.
+
+---
+
+## Procedure
+1. Refer to the algorithm and write code for the experiment.  
+2. Open **Scilab** on your system.  
+3. Type your code in a new editor.  
+4. Save the file.  
+5. Execute the code.  
+6. If any errors occur, correct the code and execute again.  
+7. Verify the generated results.
+
+---
+
+## Program
+
+```scilab
+// Clear workspace and console
+clear; clc; clear;
+
+// Mean Value function X=f(x)
+function z = f(x)
+    z = 3*(1-x)^2; // Marginal Probability Density Function
+endfunction
+
+a = 0;
+b = 1;
+EX = intg(a, b, f); // Mean value of X
+
+// Function Y=c(y)
+function z = c(y)
+    z = 3*(1-y)^2; // Marginal Probability Density Function
+endfunction
+
+EY = intg(a, b, c); // Mean value of Y
+
+disp(EX, "i) Mean of X =");
+disp(EY, "Mean of Y =");
+
+// Variance
+function z = g(x)
+    z = 3*(1-x)^2 * x^2; // X^2 * PDF
+endfunction
+
+EX2 = intg(a, b, g); // E[X^2]
+
+function z = h(y)
+    z = 3*(1-y)^2 * y^2; // Y^2 * PDF
+endfunction
+
+EY2 = intg(a, b, h); // E[Y^2]
+
+vX2 = EX2 - (EX)^2; // Variance of X
+vY2 = EY2 - (EY)^2; // Variance of Y
+
+disp(vX2, "ii) Variance of X");
+disp(vY2, "Variance of Y");
+
+// Cross-Correlation
+x = input("Type in the reference sequence = ");
+y = input("Type in the second sequence = ");
+n1 = max(size(y)) - 1;
+n2 = max(size(x)) - 1;
+r = corr(x, y, n1);
+plot2d3('gnn', r);
+```
+
+--- 
+
+## Output
+
+### Mean Values
+- Mean of X = 0.25  
+- Mean of Y = 0.25
+
+### Variance Values
+- Variance of X = 0.0375  
+- Variance of Y = 0.0375
+
+### Cross-Correlation Input Example
+- Reference sequence: `[1, 2, 3, 4, 5, 6, 7, 8]`  
+- Second sequence: `[2, 1, 3, 5, 6, 3, 5, 9]`
+
+
+<img width="333" height="351" alt="image" src="https://github.com/user-attachments/assets/ff6eb978-5341-41a6-add2-fc506eb746a9" />
+
+## RESULT:
+
+Thus the mean , variance and cross correlation are executed in Scilab and output is verified.
