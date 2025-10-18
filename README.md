@@ -101,9 +101,13 @@ plot2d3('gnn', r);
 - Reference sequence: `[1, 2, 3, 4, 5, 6, 7, 8]`  
 - Second sequence: `[2, 1, 3, 5, 6, 3, 5, 9]`
 
+---
 
 <img width="333" height="351" alt="image" src="https://github.com/user-attachments/assets/ff6eb978-5341-41a6-add2-fc506eb746a9" />
+
+---
 
 ## RESULT:
 
 Thus the mean , variance and cross correlation are executed in Scilab and output is verified.
+---
