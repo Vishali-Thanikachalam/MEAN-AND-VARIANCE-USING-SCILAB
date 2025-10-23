@@ -1,5 +1,5 @@
 # MEAN-AND-VARIANCE-USING-SCILAB
-# Experiment No. 5: Simulation of Mean and Variance Using Scilab
+# Simulation of Mean and Variance Using Scilab
 
 ## Aim
 To write a program for **mean**, **variance**, and **cross-correlation** in Scilab and verify the output.
