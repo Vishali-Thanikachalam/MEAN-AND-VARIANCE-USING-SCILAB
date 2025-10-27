@@ -36,11 +36,13 @@ To write a program for **mean**, **variance**, and **cross-correlation** in Scil
 
 ```scilab
 // Clear workspace and console
-clear; clc; clear;
+clear;
+clc;
+clear;
 
 // Mean Value function X=f(x)
 function z = f(x)
-    z = 3*(1-x)^2; // Marginal Probability Density Function
+    z = 3*(1-x)^3; // Marginal Probability Density Function
 endfunction
 
 a = 0;
@@ -49,7 +51,7 @@ EX = intg(a, b, f); // Mean value of X
 
 // Function Y=c(y)
 function z = c(y)
-    z = 3*(1-y)^2; // Marginal Probability Density Function
+    z = 3*(1-y)^3; // Marginal Probability Density Function
 endfunction
 
 EY = intg(a, b, c); // Mean value of Y
@@ -59,13 +61,13 @@ disp(EY, "Mean of Y =");
 
 // Variance
 function z = g(x)
-    z = 3*(1-x)^2 * x^2; // X^2 * PDF
+    z = 3*(1-x)^3 * x^2; // X^2 * PDF
 endfunction
 
 EX2 = intg(a, b, g); // E[X^2]
 
 function z = h(y)
-    z = 3*(1-y)^2 * y^2; // Y^2 * PDF
+    z = 3*(1-y)^3 * y^2; // Y^2 * PDF
 endfunction
 
 EY2 = intg(a, b, h); // E[Y^2]
@@ -109,6 +111,9 @@ plot2d3('gnn', r);
 
 ## MANUAL CALCULATION:
 
+![WhatsApp Image 2025-10-27 at 17 03 56_b74d3ac6](https://github.com/user-attachments/assets/aa459ff0-d4ab-42e9-9a47-9143f50fae8d)
+
+![WhatsApp Image 2025-10-27 at 17 03 58_3ce3e4f1](https://github.com/user-attachments/assets/65ef0b65-fe6b-4eab-9e2b-3a075f7f11e9)
 
 ---
 
