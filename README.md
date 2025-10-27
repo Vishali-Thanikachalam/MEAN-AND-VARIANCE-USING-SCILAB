@@ -105,15 +105,16 @@ plot2d3('gnn', r);
 
 ---
 
-<img width="610" height="460" alt="image" src="https://github.com/user-attachments/assets/92d08a66-c3d4-496a-8d39-1fc97f83530f" />
+<img width="610" height="420" alt="image" src="https://github.com/user-attachments/assets/92d08a66-c3d4-496a-8d39-1fc97f83530f" />
 
 ---
 
 ## MANUAL CALCULATION:
 
-![WhatsApp Image 2025-10-27 at 17 03 56_b74d3ac6](https://github.com/user-attachments/assets/aa459ff0-d4ab-42e9-9a47-9143f50fae8d)
+<img width="560" height="780" alt="image" src="https://github.com/user-attachments/assets/aa459ff0-d4ab-42e9-9a47-9143f50fae8d "/>
 
-![WhatsApp Image 2025-10-27 at 17 03 58_3ce3e4f1](https://github.com/user-attachments/assets/65ef0b65-fe6b-4eab-9e2b-3a075f7f11e9)
+<img width="560" height="660" alt="image" src="https://github.com/user-attachments/assets/65ef0b65-fe6b-4eab-9e2b-3a075f7f11e9 "/>
+
 
 ---
 
